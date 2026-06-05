@@ -846,6 +846,96 @@ function submitSMSOptin() {
 }
 </script>
 
+
+<!-- SMS OPT-IN SECTION -->
+<section id="sms-signup" style="background:#f0f4ff;padding:60px 5%;">
+  <div style="max-width:640px;margin:0 auto;text-align:center;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#4285F4;margin-bottom:10px;">Stay Connected</div>
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:800;color:#002855;line-height:1;margin-bottom:12px;">Get Exclusive Deals by Text</h2>
+    <p style="font-size:16px;color:#555;line-height:1.65;margin-bottom:28px;">Subscribe to receive special direct-booking offers, last-minute deals, and WVU game weekend rates — only available to our SMS subscribers.</p>
+
+    <form id="smsOptInForm" style="background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.08);text-align:left;" onsubmit="handleSmsSubmit(event)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+        <div>
+          <label style="font-size:13px;font-weight:600;color:#002855;display:block;margin-bottom:5px;">First Name *</label>
+          <input type="text" name="firstName" required placeholder="Your first name"
+            style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;outline:none;">
+        </div>
+        <div>
+          <label style="font-size:13px;font-weight:600;color:#002855;display:block;margin-bottom:5px;">Last Name *</label>
+          <input type="text" name="lastName" required placeholder="Your last name"
+            style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;outline:none;">
+        </div>
+      </div>
+      <div style="margin-bottom:14px;">
+        <label style="font-size:13px;font-weight:600;color:#002855;display:block;margin-bottom:5px;">Mobile Phone Number *</label>
+        <input type="tel" name="phone" required placeholder="(304) 000-0000"
+          style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;outline:none;">
+      </div>
+      <div style="margin-bottom:14px;">
+        <label style="font-size:13px;font-weight:600;color:#002855;display:block;margin-bottom:5px;">Email Address (optional)</label>
+        <input type="email" name="email" placeholder="your@email.com"
+          style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;outline:none;">
+      </div>
+
+      <!-- SMS CONSENT CHECKBOX — TCR COMPLIANT -->
+      <div style="background:#f8f9ff;border:1.5px solid #c7d4f5;border-radius:8px;padding:14px;margin-bottom:18px;">
+        <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;">
+          <input type="checkbox" id="smsConsent" name="smsConsent" required
+            style="width:18px;height:18px;margin-top:2px;flex-shrink:0;accent-color:#002855;cursor:pointer;">
+          <span style="font-size:13px;color:#333;line-height:1.6;">
+            I agree to receive recurring SMS text messages from <strong>Morgantown Motel</strong> at the mobile number provided above, including booking confirmations, special offers, and updates.
+            <br><br>
+            <span style="font-size:12px;color:#666;">
+              • Messaging frequency may vary.<br>
+              • Message and data rates may apply.<br>
+              • You can opt out any time by texting <strong>STOP</strong>.<br>
+              • For assistance, text <strong>HELP</strong> or visit our website at <a href="https://morgantownmotel.com/" style="color:#4285F4;">https://morgantownmotel.com/</a>.<br>
+              • Visit <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">https://morgantownmotel.com/policies.html</a> for our Privacy Policy and Terms of Service.<br>
+              • We will never sell or share your phone number with third parties for SMS purposes.
+            </span>
+          </span>
+        </label>
+      </div>
+
+      <button type="submit"
+        style="width:100%;background:#002855;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;padding:14px;border-radius:6px;border:none;cursor:pointer;letter-spacing:.5px;transition:background .2s;"
+        onmouseover="this.style.background='#EAAA00';this.style.color='#002855'"
+        onmouseout="this.style.background='#002855';this.style.color='#fff'">
+        ✓ Subscribe for Exclusive Deals
+      </button>
+
+      <p style="font-size:11px;color:#888;text-align:center;margin-top:12px;">
+        By submitting this form, you consent to receive SMS messages from Morgantown Motel. 
+        Consent is not a condition of any purchase. 
+        <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">Privacy Policy</a> · 
+        <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">Terms of Service</a>
+      </p>
+    </form>
+
+    <div id="smsSuccessMsg" style="display:none;background:#EAF3DE;border:1.5px solid #86EFAC;border-radius:10px;padding:20px;text-align:center;margin-top:16px;">
+      <div style="font-size:28px;margin-bottom:8px;">✅</div>
+      <div style="font-size:17px;font-weight:600;color:#166534;margin-bottom:6px;">You're subscribed!</div>
+      <div style="font-size:14px;color:#166534;">Thank you! You'll receive exclusive Morgantown Motel deals via text. Reply STOP anytime to unsubscribe.</div>
+    </div>
+  </div>
+</section>
+
+<script>
+function handleSmsSubmit(e) {
+  e.preventDefault();
+  const consent = document.getElementById('smsConsent').checked;
+  if (!consent) {
+    alert('Please check the SMS consent box to continue.');
+    return;
+  }
+  document.getElementById('smsOptInForm').style.display = 'none';
+  document.getElementById('smsSuccessMsg').style.display = 'block';
+  // Here you can add form submission to your backend/CRM
+}
+</script>
+
+
 <footer>
   <div class="footer-grid">
     <div>
