@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google Tag Manager -->
@@ -185,11 +185,6 @@ h2 {
   box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s;
 }
 .room-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-.room-img {
-  width: 100%; height: 200px; object-fit: cover;
-  background: var(--navy);
-  display: flex; align-items: center; justify-content: center;
-}
 .room-img-placeholder {
   width: 100%; height: 200px;
   display: flex; align-items: center; justify-content: center;
@@ -303,9 +298,7 @@ h2 {
 
 /* FAQ */
 .faq-list { margin-top: 40px; max-width: 720px; }
-.faq-item {
-  border-bottom: 1px solid #e8e8e8; padding: 18px 0;
-}
+.faq-item { border-bottom: 1px solid #e8e8e8; padding: 18px 0; }
 .faq-q {
   font-size: 16px; font-weight: 600; color: var(--navy); cursor: pointer;
   display: flex; justify-content: space-between; align-items: center; gap: 12px;
@@ -360,7 +353,7 @@ footer {
 
 /* STICKY CALL BAR MOBILE */
 .sticky-bar {
-  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
   background: var(--navy); padding: 12px 16px;
   display: flex; gap: 10px;
 }
@@ -411,7 +404,6 @@ footer {
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4KFQNS6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <!-- NAV -->
 <nav>
@@ -438,32 +430,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1>Clean Rooms.<br><em>Honest Prices.</em><br>Morgantown.</h1>
     <p class="hero-sub">The most affordable motel near WVU — King rooms from <strong style="color:var(--gold)">$59/night, tax included</strong>. Free parking, free WiFi, no hidden fees. Skip the OTAs and get our best rate direct.</p>
     <div class="hero-ctas">
-      <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary">
-        ✓ Check Availability & Book Direct
-      </a>
+      <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary">✓ Check Availability & Book Direct</a>
       <a href="tel:3042124789" class="btn-outline">📞 Call to Reserve</a>
     </div>
     <div class="hero-trust">
-      <div class="trust-chip">
-        <svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>
-        Free Parking
-      </div>
-      <div class="trust-chip">
-        <svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>
-        Free WiFi
-      </div>
-      <div class="trust-chip">
-        <svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>
-        No Hidden Fees
-      </div>
-      <div class="trust-chip">
-        <svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>
-        Best Rate Guarantee
-      </div>
-      <div class="trust-chip">
-        <svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>
-        King from $59 — Tax Included
-      </div>
+      <div class="trust-chip"><svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>Free Parking</div>
+      <div class="trust-chip"><svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>Free WiFi</div>
+      <div class="trust-chip"><svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>No Hidden Fees</div>
+      <div class="trust-chip"><svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>Best Rate Guarantee</div>
+      <div class="trust-chip"><svg viewBox="0 0 24 24"><path d="M9 16.2l-4.2-4.2-1.4 1.4 5.6 5.6 12-12-1.4-1.4z"/></svg>King from $59 — Tax Included</div>
     </div>
   </div>
 </section>
@@ -482,18 +457,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div>
-    <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary" style="white-space:nowrap;">
-      Book Direct Now →
-    </a>
+    <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary" style="white-space:nowrap;">Book Direct Now →</a>
   </div>
 </div>
 
-<!-- TRUST / REVIEWS -->
+<!-- REVIEWS -->
 <section id="reviews" style="background:var(--white);">
   <div class="section-label">What Our Guests Say</div>
   <h2>Real Reviews.<br>Real Guests.</h2>
   <p class="section-sub">Under new management with freshly renovated rooms. Here's what guests are saying about the new Morgantown Motel.</p>
-
   <div class="reviews-grid">
     <div class="review-card">
       <div class="stars">★★★★★</div>
@@ -511,7 +483,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="reviewer">Tom A. <span>— Verified Guest, Booking.com</span></div>
     </div>
   </div>
-
   <div class="trust-stats">
     <div class="stat-box"><div class="stat-num">$59<sup>+</sup></div><div class="stat-label">King rooms from (tax incl.)</div></div>
     <div class="stat-box"><div class="stat-num">2 min</div><div class="stat-label">From I-79 Exit</div></div>
@@ -525,75 +496,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-label">Accommodations</div>
   <h2>Simple Rooms Done Right.</h2>
   <p class="section-sub">No fluff, no surprise fees. Clean, comfortable rooms with everything you need for a great stay near WVU.</p>
-
   <div class="rooms-grid">
     <div class="room-card">
       <div class="room-img-placeholder">🛏</div>
       <div class="room-body">
         <div class="room-type">Most Popular · King Bed</div>
         <div class="room-name">King Room — $59/Night</div>
-        <p class="room-desc">A full king bed, renovated bathroom with marble tiling, flat-screen TV, microwave, and mini fridge — all at $59/night, tax included. No resort fees, no surprise charges at checkout. The best value room in Morgantown.</p>
+        <p class="room-desc">A full king bed, renovated bathroom with marble tiling, flat-screen TV, microwave, and mini fridge — all at $59/night, tax included. No resort fees, no surprise charges at checkout.</p>
         <div class="room-amenities">
-          <span class="amenity-tag">Queen Bed</span>
-          <span class="amenity-tag">Free WiFi</span>
-          <span class="amenity-tag">Flat-Screen TV</span>
-          <span class="amenity-tag">Microwave</span>
-          <span class="amenity-tag">Mini Fridge</span>
-          <span class="amenity-tag">A/C & Heat</span>
+          <span class="amenity-tag">King Bed</span><span class="amenity-tag">Free WiFi</span><span class="amenity-tag">Flat-Screen TV</span><span class="amenity-tag">Microwave</span><span class="amenity-tag">Mini Fridge</span><span class="amenity-tag">A/C & Heat</span>
         </div>
         <div class="room-footer">
-          <div>
-            <div class="price-ota">~$75+ on Booking.com (+ fees)</div>
-            <div class="price">$59 <span>/ night, tax incl.</span></div>
-          </div>
+          <div><div class="price-ota">~$75+ on Booking.com (+ fees)</div><div class="price">$59 <span>/ night, tax incl.</span></div></div>
           <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-book-room">Book This Room</a>
         </div>
       </div>
     </div>
-
     <div class="room-card">
       <div class="room-img-placeholder">🛏🛏</div>
       <div class="room-body">
         <div class="room-type">Best for Families & Groups · 2 Beds</div>
         <div class="room-name">Double Room — $65/Night</div>
-        <p class="room-desc">Two beds, more space, all the essentials — just $65/night, tax included. Great for families visiting WVU, two friends splitting the cost, or anyone who wants extra room to spread out. The best per-person value in Morgantown.</p>
+        <p class="room-desc">Two beds, more space, all the essentials — just $65/night, tax included. Great for families visiting WVU, two friends splitting the cost, or anyone who wants extra room to spread out.</p>
         <div class="room-amenities">
-          <span class="amenity-tag">2 Full Beds</span>
-          <span class="amenity-tag">Free WiFi</span>
-          <span class="amenity-tag">Flat-Screen TV</span>
-          <span class="amenity-tag">Microwave</span>
-          <span class="amenity-tag">Mini Fridge</span>
-          <span class="amenity-tag">Free Parking</span>
+          <span class="amenity-tag">2 Full Beds</span><span class="amenity-tag">Free WiFi</span><span class="amenity-tag">Flat-Screen TV</span><span class="amenity-tag">Microwave</span><span class="amenity-tag">Mini Fridge</span><span class="amenity-tag">Free Parking</span>
         </div>
         <div class="room-footer">
-          <div>
-            <div class="price-ota">~$85+ on Expedia (+ fees)</div>
-            <div class="price">$65 <span>/ night, tax incl.</span></div>
-          </div>
+          <div><div class="price-ota">~$85+ on Expedia (+ fees)</div><div class="price">$65 <span>/ night, tax incl.</span></div></div>
           <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-book-room">Book This Room</a>
         </div>
       </div>
     </div>
-
     <div class="room-card">
       <div class="room-img-placeholder">🏠</div>
       <div class="room-body">
         <div class="room-type">Extended Stay</div>
         <div class="room-name">Weekly Rate Room</div>
-        <p class="room-desc">Staying a week or longer? Our weekly rates are built for students, contractors, traveling nurses, and anyone needing a home base in Morgantown. Save significantly vs nightly pricing — ask us for current rates.</p>
+        <p class="room-desc">Staying a week or longer? Our weekly rates are built for students, contractors, traveling nurses, and anyone needing a home base in Morgantown. Save significantly vs nightly pricing.</p>
         <div class="room-amenities">
-          <span class="amenity-tag">Weekly Discount</span>
-          <span class="amenity-tag">Free WiFi</span>
-          <span class="amenity-tag">Microwave</span>
-          <span class="amenity-tag">Mini Fridge</span>
-          <span class="amenity-tag">Free Parking</span>
-          <span class="amenity-tag">Flexible Dates</span>
+          <span class="amenity-tag">Weekly Discount</span><span class="amenity-tag">Free WiFi</span><span class="amenity-tag">Microwave</span><span class="amenity-tag">Mini Fridge</span><span class="amenity-tag">Free Parking</span><span class="amenity-tag">Flexible Dates</span>
         </div>
         <div class="room-footer">
-          <div>
-            <div class="price-ota">Best weekly value</div>
-            <div class="price">Call <span>for rates</span></div>
-          </div>
+          <div><div class="price-ota">Best weekly value</div><div class="price">Call <span>for rates</span></div></div>
           <a href="tel:3042124789" class="btn-book-room">Call Us</a>
         </div>
       </div>
@@ -606,7 +550,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-label">Prime Location</div>
   <h2>Everything You Need.<br>Minutes Away.</h2>
   <p class="section-sub">2 Smithtown Rd puts you perfectly between I-79 and downtown Morgantown — with WVU, restaurants, and Cheat Lake all within easy reach.</p>
-
   <div class="location-grid">
     <div>
       <ul class="distance-list">
@@ -619,21 +562,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><span class="dist-name">🌲 Coopers Rock State Forest</span><span class="dist-val">~20 min drive</span></li>
         <li><span class="dist-name">🏙️ Downtown Morgantown</span><span class="dist-val">~8 min drive</span></li>
       </ul>
-
       <div class="wvu-callout">
         <h4>🏈 WVU Game Weekend?</h4>
-        <p>WVU home games sell out every nearby hotel at 3–4x normal prices. We're $59–$65/night, tax included — and we're just 10 minutes from Mountaineer Field. Book early to lock in your rate before the weekend fills up.</p>
+        <p>WVU home games sell out every nearby hotel at 3–4x normal prices. We're $59–$65/night, tax included — and we're just 10 minutes from Mountaineer Field. Book early to lock in your rate.</p>
         <br>
         <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary" style="font-size:17px;padding:11px 22px;">Reserve for Game Weekend</a>
       </div>
     </div>
-
     <div>
       <div class="map-embed">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.9!2d-79.9734!3d39.6108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88357b4b5d7f3a1f%3A0x1!2s2+Smithtown+Rd%2C+Morgantown%2C+WV+26508!5e0!3m2!1sen!2sus!4v1"
-          allowfullscreen loading="lazy">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3097.9!2d-79.9734!3d39.6108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88357b4b5d7f3a1f%3A0x1!2s2+Smithtown+Rd%2C+Morgantown%2C+WV+26508!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy"></iframe>
       </div>
       <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
         <a href="https://maps.google.com/?q=2+Smithtown+Rd+Morgantown+WV" class="btn-outline" target="_blank" rel="noopener" style="font-size:15px;padding:11px 18px;border-color:rgba(255,255,255,0.4);color:var(--white);">📍 Get Directions</a>
@@ -648,38 +586,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-label">Skip the Middleman</div>
   <h2>Why Book Direct With Us?</h2>
   <p class="section-sub">Booking.com and Expedia add their fees on top of our room rate. When you book direct, that money stays in your pocket.</p>
-
   <div class="benefits-grid">
-    <div class="benefit-card">
-      <div class="benefit-icon">💰</div>
-      <div class="benefit-title">Save $10 Instantly</div>
-      <p class="benefit-text">Book through our website or call us directly and we'll take $10 off your stay — no code needed, no catch.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">🤝</div>
-      <div class="benefit-title">Talk to a Real Person</div>
-      <p class="benefit-text">Call (304) 212-4789 and speak directly with our team. We'll answer your questions, confirm your room, and make sure you're set.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">🔓</div>
-      <div class="benefit-title">Flexible Cancellation</div>
-      <p class="benefit-text">Plans change. When you book direct, we work with you. Call us and we'll do our best to accommodate last-minute changes.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">🅿️</div>
-      <div class="benefit-title">Always Free Parking</div>
-      <p class="benefit-text">Unlike downtown hotels charging $15–$25/night for parking, our lot is free for all guests. Always.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">💬</div>
-      <div class="benefit-title">WhatsApp Support</div>
-      <p class="benefit-text">Have a question at 11pm? Message us on WhatsApp. We respond faster than any OTA customer service line.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">⭐</div>
-      <div class="benefit-title">Best Rate Guaranteed</div>
-      <p class="benefit-text">Find a lower rate anywhere online? Show us and we'll match it — and still give you the $10 direct booking discount.</p>
-    </div>
+    <div class="benefit-card"><div class="benefit-icon">💰</div><div class="benefit-title">Save $10 Instantly</div><p class="benefit-text">Book through our website or call us directly and we'll take $10 off your stay — no code needed, no catch.</p></div>
+    <div class="benefit-card"><div class="benefit-icon">🤝</div><div class="benefit-title">Talk to a Real Person</div><p class="benefit-text">Call (304) 212-4789 and speak directly with our team. We'll answer your questions, confirm your room, and make sure you're set.</p></div>
+    <div class="benefit-card"><div class="benefit-icon">🔓</div><div class="benefit-title">Flexible Cancellation</div><p class="benefit-text">Plans change. When you book direct, we work with you. Call us and we'll do our best to accommodate last-minute changes.</p></div>
+    <div class="benefit-card"><div class="benefit-icon">🅿️</div><div class="benefit-title">Always Free Parking</div><p class="benefit-text">Unlike downtown hotels charging $15–$25/night for parking, our lot is free for all guests. Always.</p></div>
+    <div class="benefit-card"><div class="benefit-icon">💬</div><div class="benefit-title">WhatsApp Support</div><p class="benefit-text">Have a question at 11pm? Message us on WhatsApp. We respond faster than any OTA customer service line.</p></div>
+    <div class="benefit-card"><div class="benefit-icon">⭐</div><div class="benefit-title">Best Rate Guaranteed</div><p class="benefit-text">Find a lower rate anywhere online? Show us and we'll match it — and still give you the $10 direct booking discount.</p></div>
   </div>
 </section>
 
@@ -688,48 +601,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-label">Exclusive Deals</div>
   <h2>Direct Booking Offers.</h2>
   <p class="section-sub">These rates are only available when you book directly with us — not on Booking.com, not on Expedia. Just call or click.</p>
-
   <div class="offers-grid">
     <div class="offer-card">
-      <div class="offer-header">
-        <div class="offer-tag">Best Seller</div>
-        <div class="offer-name">Direct Booking Discount</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Book through our website or by phone and automatically save $10 off your total stay. No minimum nights required. Best for short stays and last-minute trips.</p>
-        <div class="offer-code-row">
-          <div class="offer-code">DIRECT10</div>
-          <div class="offer-code-label">Use at checkout<br>or mention on call</div>
-        </div>
-      </div>
+      <div class="offer-header"><div class="offer-tag">Best Seller</div><div class="offer-name">Direct Booking Discount</div></div>
+      <div class="offer-body"><p class="offer-desc">Book through our website or by phone and automatically save $10 off your total stay. No minimum nights required.</p><div class="offer-code-row"><div class="offer-code">DIRECT10</div><div class="offer-code-label">Use at checkout<br>or mention on call</div></div></div>
     </div>
-
     <div class="offer-card">
-      <div class="offer-header">
-        <div class="offer-tag">Extended Stay</div>
-        <div class="offer-name">7-Night Weekly Rate</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Stay 7 nights or more and unlock our weekly flat rate — significantly cheaper than nightly pricing. Perfect for students, contractors, and work travelers in Morgantown.</p>
-        <div class="offer-code-row">
-          <div class="offer-code">WEEKLY</div>
-          <div class="offer-code-label">Call for rate<br>(304) 212-4789</div>
-        </div>
-      </div>
+      <div class="offer-header"><div class="offer-tag">Extended Stay</div><div class="offer-name">7-Night Weekly Rate</div></div>
+      <div class="offer-body"><p class="offer-desc">Stay 7 nights or more and unlock our weekly flat rate — significantly cheaper than nightly pricing. Perfect for students, contractors, and work travelers.</p><div class="offer-code-row"><div class="offer-code">WEEKLY</div><div class="offer-code-label">Call for rate<br>(304) 212-4789</div></div></div>
     </div>
-
     <div class="offer-card">
-      <div class="offer-header">
-        <div class="offer-tag">WVU Families</div>
-        <div class="offer-name">Family Visit Special</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Coming to see your son or daughter at WVU? Call us directly and mention this offer for a free room upgrade (when available) and $10 off your stay. We love WVU families.</p>
-        <div class="offer-code-row">
-          <div class="offer-code">WVUFAM</div>
-          <div class="offer-code-label">Call to redeem<br>(304) 212-4789</div>
-        </div>
-      </div>
+      <div class="offer-header"><div class="offer-tag">WVU Families</div><div class="offer-name">Family Visit Special</div></div>
+      <div class="offer-body"><p class="offer-desc">Coming to see your son or daughter at WVU? Call us directly and mention this offer for a free room upgrade (when available) and $10 off your stay.</p><div class="offer-code-row"><div class="offer-code">WVUFAM</div><div class="offer-code-label">Call to redeem<br>(304) 212-4789</div></div></div>
     </div>
   </div>
 </section>
@@ -739,38 +622,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="section-label">Common Questions</div>
   <h2>Quick Answers.</h2>
   <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What's included in the room rate?</div>
-      <div class="faq-a">All room rates include free WiFi, free parking, and access to all standard room amenities (TV, microwave, mini fridge, A/C). There are no resort fees or hidden charges.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">How far is the motel from WVU?</div>
-      <div class="faq-a">Morgantown Motel is approximately 10–12 minutes by car from the main WVU campus and Mountaineer Field. We're conveniently located just off I-79 at 2 Smithtown Rd.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What time is check-in and check-out?</div>
-      <div class="faq-a">Check-in is at 2:00 PM. Check-out is at 12:00 PM (noon). Early check-in or late check-out may be available — just call us and we'll do our best to accommodate.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Do you have parking?</div>
-      <div class="faq-a">Yes — free on-site parking is available for all guests, including trucks and larger vehicles. Unlike many downtown Morgantown hotels, we never charge for parking.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Can I book by phone or WhatsApp?</div>
-      <div class="faq-a">Absolutely. Call us at (304) 212-4789 or message us on WhatsApp at the same number. Booking by phone or WhatsApp also qualifies for our $10 direct booking discount.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Do you allow pets?</div>
-      <div class="faq-a">Please call us at (304) 212-4789 to ask about our current pet policy — availability and pet-friendly rooms vary by date.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?</div>
-      <div class="faq-a">We offer free cancellation up to 24 hours before check-in. Late cancellations or no-shows may be charged for one night's stay. For direct bookings, call us at (304) 212-4789 and we'll do our best to help. <a href="/policies.html#cancellation" style="color:var(--gold-dark);font-weight:600;">See full cancellation policy →</a></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Where can I read your full hotel policies?</div>
-      <div class="faq-a">Our complete policies — check-in/out times, pet policy, smoking rules, deposit, cancellation, and privacy policy — are all in one place. <a href="/policies.html" style="color:var(--gold-dark);font-weight:600;">Read full hotel policies →</a></div>
-    </div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's included in the room rate?</div><div class="faq-a">All room rates include free WiFi, free parking, and access to all standard room amenities (TV, microwave, mini fridge, A/C). There are no resort fees or hidden charges.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How far is the motel from WVU?</div><div class="faq-a">Morgantown Motel is approximately 10–12 minutes by car from the main WVU campus and Mountaineer Field. We're conveniently located just off I-79 at 2 Smithtown Rd.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What time is check-in and check-out?</div><div class="faq-a">Check-in is at 2:00 PM. Check-out is at 12:00 PM (noon). Early check-in or late check-out may be available — just call us and we'll do our best to accommodate.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you have parking?</div><div class="faq-a">Yes — free on-site parking is available for all guests, including trucks and larger vehicles. Unlike many downtown Morgantown hotels, we never charge for parking.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I book by phone or WhatsApp?</div><div class="faq-a">Absolutely. Call us at (304) 212-4789 or message us on WhatsApp at the same number. Booking by phone or WhatsApp also qualifies for our $10 direct booking discount.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you allow pets?</div><div class="faq-a">Please call us at (304) 212-4789 to ask about our current pet policy — availability and pet-friendly rooms vary by date.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?</div><div class="faq-a">We offer free cancellation up to 24 hours before check-in. Late cancellations or no-shows may be charged for one night's stay. <a href="/policies.html#cancellation" style="color:var(--gold-dark);font-weight:600;">See full cancellation policy →</a></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Where can I read your full hotel policies?</div><div class="faq-a">Our complete policies are all in one place. <a href="/policies.html" style="color:var(--gold-dark);font-weight:600;">Read full hotel policies →</a></div></div>
   </div>
 </section>
 
@@ -778,53 +637,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="final-cta">
   <h2>King Room $59. Double $65.<br>Tax Included. No Surprises.</h2>
   <p>The most affordable motel near WVU. No OTA fees, no hidden charges. Book direct in 2 minutes.</p>
-
-    <div class="price-compare" style="display:flex;width:100%;max-width:400px;margin:0 auto 28px;">
-      <div class="price-compare-box">
-        <div class="compare-label">OTA Price (King)</div>
-        <div class="compare-price old">~$75+</div>
-        <div class="compare-save">+ OTA fees &amp; taxes</div>
-      </div>
-      <div class="price-compare-box">
-        <div class="compare-label">Direct Price (King)</div>
-        <div class="compare-price">$59</div>
-        <div class="compare-save">Tax included. No fees.</div>
-      </div>
-    </div>
-
+  <div class="price-compare" style="display:flex;width:100%;max-width:400px;margin:0 auto 28px;">
+    <div class="price-compare-box"><div class="compare-label">OTA Price (King)</div><div class="compare-price old">~$75+</div><div class="compare-save">+ OTA fees &amp; taxes</div></div>
+    <div class="price-compare-box"><div class="compare-label">Direct Price (King)</div><div class="compare-price">$59</div><div class="compare-save">Tax included. No fees.</div></div>
+  </div>
   <div class="final-ctas">
-    <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary" style="font-size:20px;padding:16px 32px;">
-      ✓ Book Online — Save $10
-    </a>
-    <a href="tel:3042124789" class="btn-outline" style="font-size:20px;padding:16px 28px;">
-      📞 Call (304) 212-4789
-    </a>
-    <a href="https://wa.me/16469912340" class="btn-whatsapp" style="font-size:18px;padding:16px 24px;">
-      💬 WhatsApp Us
-    </a>
+    <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="btn-primary" style="font-size:20px;padding:16px 32px;">✓ Book Online — Save $10</a>
+    <a href="tel:3042124789" class="btn-outline" style="font-size:20px;padding:16px 28px;">📞 Call (304) 212-4789</a>
+    <a href="https://wa.me/16469912340" class="btn-whatsapp" style="font-size:18px;padding:16px 24px;">💬 WhatsApp Us</a>
   </div>
   <p style="margin-top:20px;font-size:13px;color:rgba(255,255,255,0.5);">2 Smithtown Rd, Morgantown, WV 26508 · Best Rate Guaranteed · No Booking Fees</p>
 </section>
 
-<!-- FOOTER -->
-<!-- SMS OPT-IN SECTION -->
+<!-- ═══════════════════════════════════════════════════════
+     SMS OPT-IN SECTION 1 — Quick "Text Me Deals" button
+     Data goes to → Google Sheet via Apps Script
+     ═══════════════════════════════════════════════════════ -->
 <section id="sms-optin" style="background:var(--navy);padding:60px 20px;border-top:3px solid var(--gold);">
   <div style="max-width:520px;margin:0 auto;text-align:center;">
     <div style="font-size:12px;font-weight:700;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">📱 Text Deals</div>
     <h2 style="color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:34px;font-weight:700;margin-bottom:10px;">Get Exclusive Rates by Text</h2>
     <p style="color:rgba(255,255,255,0.65);font-size:15px;line-height:1.6;margin-bottom:28px;">WVU game weekends sell out fast. Get first access to availability alerts, last-minute deals, and special rates — straight to your phone.</p>
 
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
-      <input type="tel" id="sms-phone" placeholder="(XXX) XXX-XXXX"
+    <form id="sms-quick-form" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
+      <input type="tel" name="phone" placeholder="(XXX) XXX-XXXX" required
         style="flex:1;min-width:200px;padding:14px 18px;border-radius:8px;border:2px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.07);color:var(--white);font-size:15px;outline:none;"
         onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
-      <button onclick="submitSMSOptin()"
+      <button type="submit"
         style="background:var(--gold);color:var(--navy);font-weight:800;padding:14px 26px;border:none;border-radius:8px;cursor:pointer;font-size:15px;white-space:nowrap;letter-spacing:0.5px;">
         Text Me Deals →
       </button>
-    </div>
+    </form>
+    <div id="sms-quick-success" style="display:none;color:var(--gold);font-weight:600;font-size:15px;margin-bottom:14px;">✅ You're subscribed! Reply STOP anytime to opt out.</div>
 
-    <!-- REQUIRED TCR CONSENT LANGUAGE -->
     <p style="font-size:11px;color:rgba(255,255,255,0.4);line-height:1.7;max-width:440px;margin:0 auto;">
       By submitting your number, you consent to receive recurring automated SMS messages from
       <strong style="color:rgba(255,255,255,0.6);">Morgantown Motel</strong> including reservation
@@ -837,24 +682,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<script>
-function submitSMSOptin() {
-  const phone = document.getElementById('sms-phone').value.trim();
-  if (!phone) { alert('Please enter your phone number.'); return; }
-  alert('Thank you! You\'ll receive exclusive deals from Morgantown Motel. Reply STOP anytime to opt out.');
-  document.getElementById('sms-phone').value = '';
-}
-</script>
-
-
-<!-- SMS OPT-IN SECTION -->
+<!-- ═══════════════════════════════════════════════════════
+     SMS OPT-IN SECTION 2 — Full form (name, phone, email)
+     Data goes to → Google Sheet via Apps Script
+     ═══════════════════════════════════════════════════════ -->
 <section id="sms-signup" style="background:#f0f4ff;padding:60px 5%;">
   <div style="max-width:640px;margin:0 auto;text-align:center;">
     <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#4285F4;margin-bottom:10px;">Stay Connected</div>
     <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:800;color:#002855;line-height:1;margin-bottom:12px;">Get Exclusive Deals by Text</h2>
     <p style="font-size:16px;color:#555;line-height:1.65;margin-bottom:28px;">Subscribe to receive special direct-booking offers, last-minute deals, and WVU game weekend rates — only available to our SMS subscribers.</p>
 
-    <form id="smsOptInForm" style="background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.08);text-align:left;" onsubmit="handleSmsSubmit(event)">
+    <form id="sms-full-form" style="background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.08);text-align:left;">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
         <div>
           <label style="font-size:13px;font-weight:600;color:#002855;display:block;margin-bottom:5px;">First Name *</label>
@@ -878,7 +716,7 @@ function submitSMSOptin() {
           style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;outline:none;">
       </div>
 
-      <!-- SMS CONSENT CHECKBOX — TCR COMPLIANT -->
+      <!-- SMS CONSENT CHECKBOX -->
       <div style="background:#f8f9ff;border:1.5px solid #c7d4f5;border-radius:8px;padding:14px;margin-bottom:18px;">
         <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;">
           <input type="checkbox" id="smsConsent" name="smsConsent" required
@@ -890,52 +728,105 @@ function submitSMSOptin() {
               • Messaging frequency may vary.<br>
               • Message and data rates may apply.<br>
               • You can opt out any time by texting <strong>STOP</strong>.<br>
-              • For assistance, text <strong>HELP</strong> or visit our website at <a href="https://morgantownmotel.com/" style="color:#4285F4;">https://morgantownmotel.com/</a>.<br>
-              • Visit <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">https://morgantownmotel.com/policies.html</a> for our Privacy Policy and Terms of Service.<br>
+              • For assistance, text <strong>HELP</strong> or visit <a href="https://morgantownmotel.com/" style="color:#4285F4;">morgantownmotel.com</a>.<br>
+              • Visit <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">morgantownmotel.com/policies.html</a> for our Privacy Policy and Terms of Service.<br>
               • We will never sell or share your phone number with third parties for SMS purposes.
             </span>
           </span>
         </label>
       </div>
 
-      <button type="submit"
+      <button type="submit" id="sms-full-btn"
         style="width:100%;background:#002855;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;padding:14px;border-radius:6px;border:none;cursor:pointer;letter-spacing:.5px;transition:background .2s;"
         onmouseover="this.style.background='#EAAA00';this.style.color='#002855'"
-        onmouseout="this.style.background='#002855';this.style.color='#fff'">
+        onmouseout="if(!this.disabled){this.style.background='#002855';this.style.color='#fff'}">
         ✓ Subscribe for Exclusive Deals
       </button>
 
       <p style="font-size:11px;color:#888;text-align:center;margin-top:12px;">
-        By submitting this form, you consent to receive SMS messages from Morgantown Motel. 
-        Consent is not a condition of any purchase. 
-        <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">Privacy Policy</a> · 
+        By submitting this form, you consent to receive SMS messages from Morgantown Motel.
+        Consent is not a condition of any purchase.
+        <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">Privacy Policy</a> ·
         <a href="https://morgantownmotel.com/policies.html" style="color:#4285F4;">Terms of Service</a>
       </p>
     </form>
 
-    <div id="smsSuccessMsg" style="display:none;background:#EAF3DE;border:1.5px solid #86EFAC;border-radius:10px;padding:20px;text-align:center;margin-top:16px;">
-      <div style="font-size:28px;margin-bottom:8px;">✅</div>
-      <div style="font-size:17px;font-weight:600;color:#166534;margin-bottom:6px;">You're subscribed!</div>
+    <div id="smsSuccessMsg" style="display:none;background:#EAF3DE;border:1.5px solid #86EFAC;border-radius:10px;padding:24px;text-align:center;margin-top:16px;">
+      <div style="font-size:32px;margin-bottom:8px;">✅</div>
+      <div style="font-size:18px;font-weight:700;color:#166534;margin-bottom:6px;">You're subscribed!</div>
       <div style="font-size:14px;color:#166534;">Thank you! You'll receive exclusive Morgantown Motel deals via text. Reply STOP anytime to unsubscribe.</div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════
+     GOOGLE SHEETS INTEGRATION
+     Both forms submit to your Apps Script Web App URL
+     Rows saved: Timestamp | First Name | Last Name | Phone | Email | Source
+     ═══════════════════════════════════════════════════════ -->
 <script>
-function handleSmsSubmit(e) {
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbzVi0bUXH88RKe7CvkGQymKBNeRIAUIiKjaXqI92fY5w7Xcc91yAeB-DZxXKjCx1rYN/exec";
+
+// ── Quick "Text Me Deals" form ──────────────────────────
+document.getElementById("sms-quick-form").addEventListener("submit", async function(e) {
   e.preventDefault();
-  const consent = document.getElementById('smsConsent').checked;
-  if (!consent) {
-    alert('Please check the SMS consent box to continue.');
+  const phone = this.querySelector("[name=phone]").value.trim();
+  if (!phone) return;
+
+  const btn = this.querySelector("button[type=submit]");
+  btn.textContent = "Sending…";
+  btn.disabled = true;
+
+  try {
+    await fetch(SHEET_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ firstName: "", lastName: "", phone, email: "", source: "quick-button" })
+    });
+  } catch(err) { /* no-cors: response is opaque, treat as success */ }
+
+  this.style.display = "none";
+  document.getElementById("sms-quick-success").style.display = "block";
+});
+
+// ── Full sign-up form ───────────────────────────────────
+document.getElementById("sms-full-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  if (!document.getElementById("smsConsent").checked) {
+    alert("Please check the SMS consent box to continue.");
     return;
   }
-  document.getElementById('smsOptInForm').style.display = 'none';
-  document.getElementById('smsSuccessMsg').style.display = 'block';
-  // Here you can add form submission to your backend/CRM
-}
+
+  const btn = document.getElementById("sms-full-btn");
+  btn.textContent = "Subscribing…";
+  btn.disabled = true;
+  btn.style.background = "#888";
+
+  const data = {
+    firstName: this.querySelector("[name=firstName]").value.trim(),
+    lastName:  this.querySelector("[name=lastName]").value.trim(),
+    phone:     this.querySelector("[name=phone]").value.trim(),
+    email:     this.querySelector("[name=email]").value.trim(),
+    source:    "full-form"
+  };
+
+  try {
+    await fetch(SHEET_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+  } catch(err) { /* no-cors: opaque response, treat as success */ }
+
+  this.style.display = "none";
+  document.getElementById("smsSuccessMsg").style.display = "block";
+});
 </script>
 
-
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div>
@@ -974,10 +865,10 @@ function handleSmsSubmit(e) {
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Morgantown Motel. All rights reserved.</span>
+    <span>© 2026 Morgantown Motel. All rights reserved.</span>
     <span>
       <a href="/policies.html" style="color:rgba(255,255,255,0.5);">Policies &amp; Privacy</a> ·
-      <a href="/policies.html#sms-policy" style="color:rgba(255,255,255,0.5);">SMS Terms</a> ·
+      <a href="/policies.html#sms-terms" style="color:rgba(255,255,255,0.5);">SMS Terms</a> ·
       Book direct for the best rate ·
       <a href="tel:3042124789" style="color:var(--gold);">(304) 212-4789</a>
     </span>
@@ -998,7 +889,6 @@ function toggleFaq(el) {
   el.classList.toggle('open');
   el.nextElementSibling.classList.toggle('open');
 }
-// Add scroll-based nav shadow
 window.addEventListener('scroll', () => {
   document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.3)' : 'none';
 });
