@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google Tag Manager -->
@@ -767,6 +767,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 const SHEET_URL = "https://script.google.com/macros/s/AKfycbzVi0bUXH88RKe7CvkGQymKBNeRIAUIiKjaXqI92fY5w7Xcc91yAeB-DZxXKjCx1rYN/exec";
 
+function sendToSheet(params) {
+  // Use GET + query string — works reliably with Apps Script no-cors
+  const qs = new URLSearchParams(params).toString();
+  return fetch(SHEET_URL + "?" + qs, { method: "GET", mode: "no-cors" });
+}
+
 // ── Quick "Text Me Deals" form ──────────────────────────
 document.getElementById("sms-quick-form").addEventListener("submit", async function(e) {
   e.preventDefault();
@@ -778,13 +784,8 @@ document.getElementById("sms-quick-form").addEventListener("submit", async funct
   btn.disabled = true;
 
   try {
-    await fetch(SHEET_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ firstName: "", lastName: "", phone, email: "", source: "quick-button" })
-    });
-  } catch(err) { /* no-cors: response is opaque, treat as success */ }
+    await sendToSheet({ firstName: "", lastName: "", phone, email: "", source: "quick-button" });
+  } catch(err) {}
 
   this.style.display = "none";
   document.getElementById("sms-quick-success").style.display = "block";
@@ -804,22 +805,15 @@ document.getElementById("sms-full-form").addEventListener("submit", async functi
   btn.disabled = true;
   btn.style.background = "#888";
 
-  const data = {
-    firstName: this.querySelector("[name=firstName]").value.trim(),
-    lastName:  this.querySelector("[name=lastName]").value.trim(),
-    phone:     this.querySelector("[name=phone]").value.trim(),
-    email:     this.querySelector("[name=email]").value.trim(),
-    source:    "full-form"
-  };
-
   try {
-    await fetch(SHEET_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
+    await sendToSheet({
+      firstName: this.querySelector("[name=firstName]").value.trim(),
+      lastName:  this.querySelector("[name=lastName]").value.trim(),
+      phone:     this.querySelector("[name=phone]").value.trim(),
+      email:     this.querySelector("[name=email]").value.trim(),
+      source:    "full-form"
     });
-  } catch(err) { /* no-cors: opaque response, treat as success */ }
+  } catch(err) {}
 
   this.style.display = "none";
   document.getElementById("smsSuccessMsg").style.display = "block";
