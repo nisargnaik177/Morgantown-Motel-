@@ -767,10 +767,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 const SHEET_URL = "https://script.google.com/macros/s/AKfycbzVi0bUXH88RKe7CvkGQymKBNeRIAUIiKjaXqI92fY5w7Xcc91yAeB-DZxXKjCx1rYN/exec";
 
+// Image pixel trick — zero CORS issues, works 100% with Apps Script
 function sendToSheet(params) {
-  // Use GET + query string — works reliably with Apps Script no-cors
-  const qs = new URLSearchParams(params).toString();
-  return fetch(SHEET_URL + "?" + qs, { method: "GET", mode: "no-cors" });
+  return new Promise(function(resolve) {
+    const qs = new URLSearchParams(params).toString();
+    const img = new Image();
+    img.onload = img.onerror = function() { resolve(); };
+    img.src = SHEET_URL + "?" + qs;
+    // Resolve after 3s max regardless
+    setTimeout(resolve, 3000);
+  });
 }
 
 // ── Quick "Text Me Deals" form ──────────────────────────
@@ -783,9 +789,7 @@ document.getElementById("sms-quick-form").addEventListener("submit", async funct
   btn.textContent = "Sending…";
   btn.disabled = true;
 
-  try {
-    await sendToSheet({ firstName: "", lastName: "", phone, email: "", source: "quick-button" });
-  } catch(err) {}
+  await sendToSheet({ firstName: "", lastName: "", phone, email: "", source: "quick-button" });
 
   this.style.display = "none";
   document.getElementById("sms-quick-success").style.display = "block";
@@ -805,15 +809,13 @@ document.getElementById("sms-full-form").addEventListener("submit", async functi
   btn.disabled = true;
   btn.style.background = "#888";
 
-  try {
-    await sendToSheet({
-      firstName: this.querySelector("[name=firstName]").value.trim(),
-      lastName:  this.querySelector("[name=lastName]").value.trim(),
-      phone:     this.querySelector("[name=phone]").value.trim(),
-      email:     this.querySelector("[name=email]").value.trim(),
-      source:    "full-form"
-    });
-  } catch(err) {}
+  await sendToSheet({
+    firstName: this.querySelector("[name=firstName]").value.trim(),
+    lastName:  this.querySelector("[name=lastName]").value.trim(),
+    phone:     this.querySelector("[name=phone]").value.trim(),
+    email:     this.querySelector("[name=email]").value.trim(),
+    source:    "full-form"
+  });
 
   this.style.display = "none";
   document.getElementById("smsSuccessMsg").style.display = "block";
